@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Laundry Order Management</h1>
-    <p>A simple frontend for orders, customers, status tracking, billing, and dashboard metrics.</p>
-  </header>
+  <main class="app-shell">
+    <header class="hero">
+      <h1>Laundry Order Management</h1>
+      <p>A lightweight control panel for orders, customers, status tracking, billing, and dashboard reporting.</p>
+    </header>
 
-  <div class="grid">
+    <div class="grid">
     <section class="card">
       <h2>Dashboard</h2>
       <div id="dashboard"></div>
@@ -70,11 +71,14 @@
     </section>
   </div>
 
-  <section class="card" style="margin-top:20px;">
+  <section class="card full-width spaced-grid">
     <h2>Orders</h2>
-    <div id="ordersList"></div>
+    <div id="ordersList">
+      <p class="empty-state">No orders loaded yet. Use filters or create a new order to begin.</p>
+    </div>
   </section>
 
   <script src="app.js" defer></script>
+</main>
 </body>
 </html>
