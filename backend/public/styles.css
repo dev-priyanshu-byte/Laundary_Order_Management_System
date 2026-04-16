@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f3f4f6;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0 0 10px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.spaced-grid {
+  margin-top: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  margin: 10px 0 4px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+button {
+  cursor: pointer;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  margin-top: 12px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.RECEIVED {
+  color: #7c3aed;
+}
+
+.status.PROCESSING {
+  color: #f59e0b;
+}
+
+.status.READY {
+  color: #0ea5e9;
+}
+
+.status.DELIVERED {
+  color: #16a34a;
+}
+
+.message {
+  margin-top: 12px;
+  color: #111827;
+}
